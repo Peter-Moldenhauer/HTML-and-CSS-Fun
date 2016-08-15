@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Fourth Page</title>
+	<link rel="stylesheet" type="text/css" href="externalStyleSheet.css"/>
+	
+	<style type="text/css">
+		h1 {color:blue;}
+		
+		#box1 {border:2px solid red;
+			position:absolute;
+			width:200px;
+			height:50px;
+			top:350px;
+			left:700px;}
+			
+		#box2 {border:2px solid blue;
+			position:relative;
+			width:200px;
+			height:50px;
+			top:350px;
+			left:400px;}
+			
+		#box3 {border:2px solid green;
+			position:fixed;
+			width:300px;
+			height:100px;
+			top:350px;
+			left:1100px;}
+			
+		img {max-height: 200px;
+			max-width: 300px;
+		}
+	</style>
+</head>
+<body>
+<h1>This is the fourth page of the website</h1>
+<p>This page is modified using an external CSS style sheet.</p>
+<p>If there were a 100 different pages to the website and I wanted to format each of the webpages the same way, 
+I would just need to change the external style sheet instead of each of the 100 individual webpages.</p>
+
+<a href="http://www.google.com">This is a link to Google</a>
+
+<h1>This h1 header is "overriding the styles" of the external css style sheet.</h1>
+<h1>The external style sheet has h1 headers as green but in the page I overrided them to blue</h1>
+
+<div id="box1">This is the first div box using absolute positioning</div>
+<div id="box2">This is the second div box using relative positioning</div>
+<div id="box3">This is the third div box using fixed positioning. This stays on the screen in the same spot even when scrolling</div>
+
+<img src="images/BugsInCode.jpg" />
+<img src="images/matrix.jpg" />
+<br/><br/>
+<a href="fifthPage.html">This is a link to the fifth page in the website</a>
+
+
+
+</body>
+</html>

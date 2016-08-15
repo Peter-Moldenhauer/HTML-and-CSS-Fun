@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Fifth Page</title>
+	<style type="text/css">
+		h2 {text-align:center;}
+		
+	</style>
+</head>
+<body>
+<a href="index.html">This is a link to the first page of the website</a>
+<h2>Using forms in html:</h2>
+<!-- use the form tags to use any of the form elements in a webpage -->
+<form action="userSubmit" method="post">
+	Username: <input type="text" name="username" size="50" maxlength="5" value="Enter username here" />
+	<br/>
+	Male: <input type="radio" name="gender" value="male">
+	Female: <input type="radio" name="gender" value="female">
+	<br/>
+	<p>Select the cities that you like:</p>
+	Milwaukee <input type="checkbox" name="city" value="Milwaukee" />
+	Raleigh <input type="checkbox" name="city" value="Raleigh" />
+	Austin <input type="checkbox" name="city" value="Austin" />
+	Phoenix <input type="checkbox" name="city" value="Phoenix" />
+	Rockford <input type="checkbox" name="city" value="Rockford" />
+	<br/>
+	<p>Select your favorite activities:</p>
+	<select name="activities">
+		<option value="play">Play the guitar</option>
+		<option value="weights">Lift weights</option>
+		<option value="dog">Walk the dog</option>
+		<option value="shopping">Go shopping</option>
+		<option value="videogames">Play videogames</option>
+	</select>
+	<br/>
+	<p>Please leave a comment below:</p>
+	<textarea name="comments" rows="8" cols="100">
+	</textarea>
+	<br/>
+	Password: <input type="password" name="pword"/>
+	<p>Now submit a file</p>
+	<input type="file" name="fileUpload" />
+	<br/><br/>
+	<input type="submit" value="Submit"/>
+</form>
+<br/>
+<a href="index.html">This is a link to the first page of the website</a>
+
+</body>
+</html>

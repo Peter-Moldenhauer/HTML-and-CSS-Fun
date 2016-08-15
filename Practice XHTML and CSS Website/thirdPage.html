@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+
+<head>
+<title>Third Page</title>
+	<style type="text/css">
+		body {background-color:#FFF5EE;}
+		
+		h1, p {color: red;}
+		
+		span {font-weight:bold;
+			color:green;
+		}
+		
+		div {border:2px solid red;
+			position:absolute;
+			width:300px;
+			top:80px;
+			left:750px;
+		}
+		
+		.greenText {color:green;}
+		.blueText {color:blue;}
+		
+		#divBoxTwo {border:2px solid blue;
+			position:absolute;
+			top:10px;
+			left:600px;
+		}
+		#divBoxThree {border:2px solid orange;
+			position:absolute;
+			top:30px;
+			left:1100px;
+		}
+		
+		p > a {color:purple;
+			font-size:30px;
+		}
+		
+		h3:first-letter {color:red;}
+	</style>
+</head>
+<body>
+<a href="index.html">This is a link back to the first page of the website</a>
+<br/><br/>
+This is normal text outside of a paragraph tag that is not modified by CSS.
+
+<!-- CSS is used to modify the h1 and p tags with the same changes at the same time -->
+<h1>This is header one modified by CSS</h1>
+<p>This is text in paragraph tags modified by CSS</p>
+<!-- Use the span tags to modify specific text inside of paragraph text -->
+<p>This is a paragraph that is modified by CSS, similar to the above paragraph text. However, in this paragraph, the span tag is used 
+to modify specific text in the paragraph. <span>This is the span text that is modified inside of the paragraph text. </span> This remaining 
+paragraph text is not modified because the span tags were only used around that one sentance in the paragraph text. </p>
+<br/>
+
+<!-- Using the div tags and div in CSS allows you to modify each individual element instead of everything being stacked on top of each other -->
+<!-- Using the div tags is a good way to position each individual element to a specific location on the screen -->
+<div>This text is surrounded by div tags</div>
+
+<!-- Using classes allows you to apply different modifications to elements of the same type, such as paragraphs or h1 -->
+<p class="greenText">This is paragraph text This is paragraph text This is paragraph text This is paragraph text This is paragraph text This is paragraph text
+This is paragraph text This is paragraph text This is paragraph text This is paragraph text This is paragraph text </p>
+<p class="blueText">This is paragraph text This is paragraph text This is paragraph text This is paragraph text This is paragraph text This is paragraph text
+This is paragraph text This is paragraph text This is paragraph text This is paragraph text This is paragraph text </p>
+
+<div id="divBoxTwo">This text is surrounded by div tags and uses an ID</div>
+<div id="divBoxThree">This text is surrounded by div tags and also uses an ID</div>
+
+<p>This is paragraph text. Using a "child selector" the link to google will be modified in CSS. <a href="http://www.google.com">This 
+is a link to Google</a> Through the "child selector" this link in the paragraph is modified but all of the other links outside of the 
+paragraph tags are not modified. This is because this link (or "a" tag) is a child of the paragraph ("p" tag). All of the other links 
+are not in paragraph tags so this means they are not "childs" of a paragraph tag. This is completed by using the p and then the > symbol 
+in the CSS portion of the code.</p>
+
+<h3>The first letter of these h3 headings are modified as pseudo elements</h3>
+<h3>Another h3 heading with the first letter modified. The size, font, and style (bold etc) could be modified this way as well.</h3>
+<h3>One last h3 heading with the first letter modified using pseudo elements</h3>
+
+<a href="fourthPage.html">This is a link to the fourth page of the website</a>
+
+</body>
+</html>
