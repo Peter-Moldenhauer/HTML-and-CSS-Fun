@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- A child is a tag that is inside another tag.  An example use of child selectors would be if you want to style links
+	but you only want to style links inside <p> tags. If you simply just styled the <a> tag this would style ALL of the 
+	links not just the ones in the <p> tags. Therefore, we need to style specific child tags. 
+	To do this, use the > symbol. The > means "relationship" 
+-->
+
+<html>
+<head>
+	<style type="text/css">
+		p > a {color:red;
+				font-size:30px;}
+	</style>
+</head>
+
+<body>
+	<a href="http://www.google.com">First Link</a>
+	<p><a href="http://www.google.com">Second Link</a></p>
+	<h3><a href="http://www.google.com">Third Link</a></h3>
+</body>
+</html>
