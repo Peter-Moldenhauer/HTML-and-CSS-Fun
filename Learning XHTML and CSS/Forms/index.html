@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--  With the use of Forms, you can get information from the user. Forms allow you to create text boxes, check boxes, 
+	and drop down lists. You need to use the <form> tags and all if your form information needs to go in these tags. 
+-->
+
+<html>
+<head>
+	<style type="text/css">
+	</style>
+</head>
+
+<body>
+	<form action="dosomething" method="post">
+		Username: <input type="text" name="username" size="20" maxlength="5" value="Enter name here" />  <!-- Text box -->
+		<br/><br/>
+		Male: <input type="radio" name="sex" value="male" />  <!-- Radio button -->
+		Female: <input type="radio" name="sex" value="female" />
+		<br/>
+		<p>Select the states you want to visit:</p>
+		Texas <input type="checkbox" name="state" value="Texas" />  <!-- Check boxes -->
+		Wisconsin <input type="checkbox" name="state" value="Wisconsin" />
+		Arizona <input type="checkbox" name="state" value="Arizona" />
+		New York <input type="checkbox" name="state" value="New York" />
+		<br/><br/>
+		What is your favorite activity to do?
+		<select name="activities">                       <!-- Drop down list --> 
+			<option value="fishing">Go fishing</option>
+			<option value="golf">Play golf</option>
+			<option value="food">Eat food</option>
+			<option value="dance">Dance to music</option>
+			<option value="sleep">Oversleep</option>
+		</select>
+		<br/><br/>
+		Write a short bio about yourself in the text box below:
+		<br/>                                           <!-- Large text area -->
+		<textarea name="bio" rows="8" cols="40">Enter bio here...
+		</textarea>
+		<br/><br/>
+		Password: <input type="password" name="pword"/>    <!-- Password text box --> 
+		<p>Upload a file below:</p> 
+		<input type="file" name="myFile" />              <!-- File upload box --> 
+		<br/><br/>
+		Submit your form information here: <input type="submit" value="Submit!"/> 
+	</form>
+</body>
+</html>
